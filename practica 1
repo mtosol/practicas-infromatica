@@ -61,3 +61,33 @@ int main()
 
 	
 }
+
+
+/*EJERCICIO 3
+Una empresa de venta de recambios de automóviles necesita un programa que calcule y muestre el precio de venta en euros de los productos. Para ello, se debe aplicar la siguiente fórmula:
+
+ganancia = precio_compra ·	margen
+100
+precio_venta = precio_compra + ganancia
+El precio de compra en euros y el margen de ganancias en tanto por ciento que desea obtener la empresa para el producto se introducirán por teclado. Como salida se deberá mostrar por pantalla el precio de venta del producto.
+*/
+
+#include <stdio.h>
+#include <conio.h>
+
+int main ()
+{
+	float precio_compra, margen, precio_venta, ganancia;
+	
+	printf ("precio compra: ");
+	scanf ("%f", &precio_compra);
+	printf ("margen: ");
+	scanf ("%f", &margen);
+	ganancia = precio_compra*(margen/100);
+	precio_venta = precio_compra + ganancia;
+	printf ("el precio de venta será de %f y la ganancia de %f", precio_venta, ganancia);
+	
+	return 0;
+	
+	
+}
