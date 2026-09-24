@@ -35,7 +35,7 @@ El programa deberá declarar variables del tipo adecuado para almacenar cada uno
 int main()
 {
 	
-	char nombre[20], primer_apellido[20], segundo_apellido[20], nif[20];
+	char nombre[20], primer_apellido[20], segundo_apellido[20], nif[9];
 	char sexo;
 	int edad;
 	float creditos_acumulados;
@@ -48,7 +48,7 @@ int main()
 	scanf ("%s", segundo_apellido);
 	printf ("NIF: ");
 	scanf ("%s", nif);
-	printf ("sexo ");
+	printf ("sexo (H/M):  ");
 	scanf ("\n%c", &sexo);
 	printf ("edad ");
 	scanf ("%d", &edad);
@@ -88,6 +88,31 @@ int main ()
 	printf ("el precio de venta será de %f y la ganancia de %f", precio_venta, ganancia);
 	
 	return 0;
+	
+	
+}
+
+
+/*EJERCICIO 4 SIN ACABAR!!!!
+Ejercicio 4.
+Realizar un programa que pida al usuario un carácter e indique por pantalla sus caracteres anterior y siguiente en la tabla ASCII.
+*/
+
+#include <stdio.h>
+#include <conio.h>
+
+int main()
+{
+	char letra, letra2;
+	printf ("dime un caracter y te diré el siguiente: ");
+	scanf ("%d", letra);
+	letra2 = letra+1;
+	printf ("la siguente letra es: %c", letra2);
+	
+	return 0;
+	
+	
+	
 	
 	
 }
