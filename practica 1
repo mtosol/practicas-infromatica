@@ -1,0 +1,25 @@
+/*EJERCICIO 1	Implementar un programa para el cálculo del área y el perímetro de un rectángulo.
+ (Hay que preguntar al usuario por la longitud de dos lados)
+*/
+
+
+#include <stdio.h> /*prinf y scanf*/
+#include <conio.h> /* getch*/
+
+int main()
+{
+	float base, altura, area, perimetro;
+	
+	printf ("dime el valor de la base: ");
+	scanf ("%f", &base);
+	printf ("dime el valor de la altura: ");
+	scanf ("%f", &altura);
+	area = base*altura;
+	perimetro = base*2+altura*2
+	printf ("el area del rectangulo es de %f\n, y el perimetro es de %f", area, perimetro);
+	
+	getch(); /*espera a q pulse una tecla*/
+	return 0;
+	
+} 
+
