@@ -23,3 +23,41 @@ int main()
 	
 } 
 
+
+/*EJERCICIO 2 Desarrollar un programa que pida la ficha de un alumno y la muestre por pantalla.
+La ficha de un alumno está formada por su nombre, primer apellido, segundo apellido, NIF, sexo (H/M), edad y número de créditos matriculados.
+Nótese que el número de créditos puede contener decimales. Ejemplo: 13.5 créditos.
+El programa deberá declarar variables del tipo adecuado para almacenar cada uno de los componentes de la ficha, asignarles el valor que el usuario introduzca y por último mostrar toda la información almacenada.
+*/
+
+#include <stdio.h>
+
+int main()
+{
+	
+	char nombre[20], primer_apellido[20], segundo_apellido[20], nif[20];
+	char sexo;
+	int edad;
+	float creditos_acumulados;
+	
+	printf ("nombre: ");
+	scanf ("%s", nombre);
+	printf ("primer apellido: ");
+	scanf ("%s", primer_apellido);
+	printf ("segundo apellido: ");
+	scanf ("%s", segundo_apellido);
+	printf ("NIF: ");
+	scanf ("%s", nif);
+	printf ("sexo ");
+	scanf ("\n%c", &sexo);
+	printf ("edad ");
+	scanf ("%d", &edad);
+	printf ("creditos ");
+	scanf ("%f", &creditos_acumulados);
+	printf ("%s %s %s NIF: %s SEXO: %c EDAD: %d CREDITOS ACUMULADOS %f", nombre, primer_apellido, segundo_apellido, nif, sexo, edad, creditos_acumulados);
+	
+	return 0;
+	
+
+	
+}
