@@ -105,7 +105,7 @@ int main()
 {
 	char letra, letra2;
 	printf ("dime un caracter y te diré el siguiente: ");
-	scanf ("%d", letra);
+	scanf ("%c", &letra);
 	letra2 = letra+1;
 	printf ("la siguente letra es: %c", letra2);
 	
@@ -114,5 +114,81 @@ int main()
 	
 	
 	
+	
+}
+
+
+/*EJERCICIO 5
+Escribir un programa en lenguaje C que pida al usuario por teclado las coordenadas (x,y) de dos puntos (x1,y1), (x2,y2) y que calcule la distancia geométrica que hay entre ellos.
+La distancia geométrica d entre dos puntos cumple:
+
+d2=(x2-x1)2+(y2-y1)2
+Para calcular la raíz cuadrada de un número hay que incluir la cabecera de la librería matemática colocando al inicio del programa
+
+#include <math.h>
+La función para calcular raíces cuadradas es sqrt(valor), que devuelve la raíz cuadrada de "valor". (Sugerencia: plantear primero el algoritmo en papel)
+*/
+
+#include <stdio.h>
+#include <conio.h>
+#include <math.h>
+
+int main()
+{
+	float x1, x2, y1, y2, distancia;
+	
+	printf ("dime x1: ");
+	scanf ("%f", &x1);
+	printf ("dime x2: ");
+	scanf ("%f", &x2);
+	printf ("dime y1: ");
+	scanf ("%f", &y1);	
+	printf ("dime y2: ");
+	scanf ("%f", &y2);
+	
+	distancia = sqrt((x2-x1)*(x2-x1)+(y2-y1)*(y2-y1));
+	
+	printf ("la distancia entre ambos puntos es de: %f", distancia);
+	
+	return 0;
+	
+	
+}
+
+/*EJERCICIO 6
+Escribir un programa en lenguaje C que pida al usuario por teclado y por separado tres cadenas de texto: nombre, primer apellido y segundo apellido, para dos personas. Seguidamente deberá preguntar por el nombre de su hijo/a y con estos datos visualizar por pantalla el nombre completo del hijo/a (utilizando los primeros apellidos de sus padres).
+*/
+
+#include <stdio.h>
+#include <conio.h>
+
+int main ()
+{
+	char np[20], nm[20], ap1[20], ap2[20], am1[20], am2[20], nh[20], ah1[20], ah2[20];
+	
+	printf ("nombre padre: ");
+	scanf ("%s", np);
+	printf ("nombre madre: ");
+	scanf ("%s", nm);
+	printf ("primer apellido padre: ");
+	scanf ("%s", ap1);
+	printf ("segundo apellido padre: ");
+	scanf ("%s", ap2);
+	printf ("primer apellido madre: ");
+	scanf ("%s", am);
+	printf ("segundo apellido madre: ");
+	scanf ("%s", am2);
+	printf ("nombre hija: ");
+	scanf ("%s", nh);
+	ah1 = ap1;
+	ah2 = am1;
+	
+	printf ("el nombre del padre es %s %s %s\n", np, ap1, ap2);
+	printf ("el nombre de la madre es %s %s %s\n", nm, am1, am2);
+	
+
+
+
+
 	
 }
